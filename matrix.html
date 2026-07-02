@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Life Cycle Library</title>
+  <link rel="stylesheet" href="matrix.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+        <div>
+            <h1 id="pageTitle" class="page_title">L1 Bid Framework</h1>
+            <p class="subtitle">Vision globale des categories et des taches par phase.</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="backButton" class="btn-back" type="button">
+            <span class="btn-back-arrow">&larr;</span> Retour
+          </button>
+          <button id="matrixCurrent" class="matrix-current" type="button"></button>
+        </div>
+      
+    </header>
+
+    <section class="content">
+          <nav class="category-rail is-hidden" id="categoryRail" aria-label="Categories"></nav>
+          <section class="matrix-panel" aria-label="Tableau global de checklist">
+            <div class="matrix-wrap">
+              <table class="checklist-table" id="checklistTable"></table>
+            </div>
+            <div class="matrix-footer-wrap" id="matrixFooterWrap">
+              <table class="checklist-table footer-table" id="footerTable"></table>
+            </div>
+            <div class="governance-wrap" id="governanceWrap">
+              <div id="governanceStripContainer"></div>
+            </div>
+          </section>
+          <section class="board" aria-live="polite">
+            <div class="board-head">
+              <h2 class="board-title" id="boardTitle">Opportunity Management</h2>
+              <span class="count" id="taskCount"></span>
+            </div>
+            <div class="category-grid" id="categoryGrid"></div>
+          </section>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <button class="drawer-backdrop" id="drawerBackdrop" type="button" aria-label="Fermer"></button>
+    <article class="drawer-panel">
+      <header class="drawer-head">
+        <div>
+          <h2 id="drawerTitle"></h2>
+          <p id="drawerMeta"></p>
+        </div>
+        <button class="close" id="closeDrawer" type="button" aria-label="Fermer">x</button>
+      </header>
+      <div class="drawer-body" id="drawerBody"></div>
+    </article>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="matrix.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Life Cycle Library</title>
+  <link rel="stylesheet" href="lifecycle.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div>
+        <h1 class="page_title">Project Life Cycle</h1>
+        <p class="subtitle">Bibliotheque interactive L1: phases, gates, familles de checklist et complements d'information.</p>
+      </div>
+      <button class="btn-back" type="button" onclick="window.location.href='DS.html'">
+        <span class="btn-back-arrow">&larr;</span> Retour
+      </button>
+    </header>
+
+    <section class="workspace">
+      <div class="main">
+        <section class="lifecycle" aria-label="Project Life Cycle">
+          <div class="bid">
+            <p class="lane-label bid">Bid Management</p>
+            <div class="bid-track" id="bidTrack"></div>
+          </div>
+          <div class="real">
+            <p class="lane-label real">Project Realisation</p>
+            <div class="real-backing" aria-hidden="true"></div>
+            <div class="real-track" id="realTrack"></div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="aside">
+        <section class="procedure-panel">
+          <h2>Delivery Procedures</h2>
+          <div class="procedure-list" id="procedureList"></div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <button class="drawer-backdrop" id="drawerBackdrop" type="button" aria-label="Fermer"></button>
+    <article class="drawer-panel">
+      <header class="drawer-head">
+        <div>
+          <h2 id="drawerTitle"></h2>
+          <p id="drawerMeta"></p>
+        </div>
+        <button class="close" id="closeDrawer" type="button" aria-label="Fermer">x</button>
+      </header>
+      <div class="drawer-body" id="drawerBody"></div>
+    </article>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

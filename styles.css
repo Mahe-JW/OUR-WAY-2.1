@@ -1,0 +1,105 @@
+:root{
+
+/* ===== COLORS ===== */
+
+--primary:#183153;
+--primary-light:#285c9c;
+--primary-dark:#10233c;
+
+--accent:#ff6b00;
+--accent-hover:#ff8533;
+
+--success:#18b56a;
+--danger:#d13c3c;
+
+--background:#f5f7fa;
+--panel:#ffffff;
+
+--text:#243447;
+--text-light:#6b7b8c;
+--text-lighter:#a0aebc;
+--text-bitter-light:#c0cbd4;
+--text-very-light:#dbe3ec;
+
+--border:#dbe3ec;
+
+/* ===== EXTENDED PALETTE (used across overview.css) ===== */
+--white:#ffffff;
+--bg:#f5f7fa;
+
+--blue-dark:#14335c;
+--blue-mid:#2d6ba7;
+--blue-light:#4f8fd1;
+--blue-pale:#6aa9e0;
+
+--orange-accent:#ff6b00;
+--red-accent:#d13c3c;
+
+--violet:#6c4fa0;
+--violet-hover:#59408a;
+--violet-light:#9c85c9;
+--violet-light-hover:#8973bd;
+
+--green:#1f9d6c;
+--green-hover:#188055;
+
+--shadow:
+0 6px 18px rgba(0,0,0,.08);
+
+--shadow-hover:
+0 12px 30px rgba(0,0,0,.14);
+
+--radius:14px;
+
+--transition:.22s ease;
+}
+
+html {
+  /* Réserve l'espace de la barre de défilement même quand elle n'est pas
+     encore affichée, pour éviter qu'elle apparaisse/disparaisse entre le
+     premier rendu et un refresh et décale ainsi les calculs de largeur
+     (ex: .page { width: min(1600px, 100%) }) utilisés par les flèches SVG. */
+  scrollbar-gutter: stable;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+margin:0;
+font-family: "Segoe UI", Inter, Arial, sans-serif;
+background:var(--background);
+color:var(--text);
+line-height:1.45;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button{
+
+transition:
+
+background var(--transition),
+
+transform var(--transition),
+
+box-shadow var(--transition);
+
+}
+
+button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:var(--shadow-hover);
+
+}
