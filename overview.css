@@ -13,6 +13,9 @@
     padding:30px 40px;
 
     box-shadow:0 4px 14px rgba(0,0,0,.05);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 .page-header h1{
     color:var(--primary);
@@ -32,6 +35,12 @@
 .page-header .sub strong {
   color: var(--text-light);
   font-weight: 700;
+}
+
+.header-left{
+    display:flex;
+    align-items:baseline;
+    gap:18px;
 }
 
 .header-title {
@@ -878,6 +887,35 @@ border-color:var(--primary-light);
   background: var(--violet-hover);
 }
 
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform .15s ease, background .15s ease;
+}
+
+.btn-back .btn-back-arrow {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.btn-back:hover {
+  background: var(--blue);
+  color: #fff;
+  transform: translateY(-1px);
+}
 
 @media (max-width: 1500px) {
   .workspace {
