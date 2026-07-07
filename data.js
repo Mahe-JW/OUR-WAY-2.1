@@ -41,7 +41,7 @@ const Home_procedures = [
   { name: "Procedure Communication & Stakeholders Mgt",link: GATE_LINK },
   { name: "Procedure Schedule Mgt",link: GATE_LINK },
   { name: "Procedure Project Integration Mgt",link: GATE_LINK },
-  { name: "Procedure Ressources Mgt",link: GATE_LINK },
+  { name: "Procedure Resources Mgt",link: GATE_LINK },
 ];
 
 const Home_procedures2 = [
